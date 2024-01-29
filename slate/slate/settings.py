@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'slate.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'timeslate_db_01',
+        'USER': 'root',
+        'PASSWORD': 'scanwich',
+        'HOST': 'localhost',
+        'PORT': '5432',  # PostgreSQL 기본 포트
     }
 }
 
