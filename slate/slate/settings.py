@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'channels',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +83,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'scanwich',
         'HOST': 'localhost',
-        'PORT': '5432',  # PostgreSQL 기본 포트
+        'PORT': '5432',
     }
 }
 
